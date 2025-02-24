@@ -7,4 +7,20 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # Route pour accéder à l'action new via /new
+  get '/new', to: 'games#new', as: :new_game
+
+  # Modifier la route score pour qu'elle ne nécessite pas d'ID
+  post '/score', to: 'games#score', as: :score_game
+
+  # Routes pour le jeu de mots
+  resources :games, only: [:new] do
+    collection do
+      post :score  # Déplacé dans collection car ne nécessite pas d'ID
+    end
+  end
+
+  # Définir la page d'accueil
+  root 'games#new'
 end

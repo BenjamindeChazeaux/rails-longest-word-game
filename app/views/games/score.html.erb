@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Result</h1>
+  
+  <%# Affichage du résultat %>
+  <div class="result">
+    <p><%= @result %></p>
+    <% if @score > 0 %>
+      <p>Score: <%= @score %></p>
+    <% end %>
+  </div>
+
+  <%# Lien pour commencer une nouvelle partie %>
+  <div class="new-game">
+    <%= link_to "Play again", new_game_path, class: "btn btn-primary" %>
+  </div>
+</div>

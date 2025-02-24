@@ -13,3 +13,46 @@
  *= require_tree .
  *= require_self
  */
+
+/* Style pour le titre principal */
+h1 {
+    text-align: center;
+}
+
+/* Style pour le conteneur des lettres */
+.letters-container {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    background-color: #E7F1FF;
+}
+
+/* Style pour le formulaire */
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style pour le label */
+label {
+    font-weight: bold;
+}
+
+/* Style pour le champ de texte */
+input[type="text"] {
+    margin: 0 10px;
+    padding: 5px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+}
+
+/* Style pour le bouton de soumission */
+input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
